@@ -1,41 +1,159 @@
-/* Your style here */
-body {
-	overflow-x: hidden;
-}
-
 @import url('http://fonts.googleapis.com/css?family=Lato:700');
 
-.background {
-	background: #348cb2 url("https://dl.dropboxusercontent.com/u/57960869/Altiviaot/wallpaper.jpg") bottom left;
-	background-repeat: repeat-x;
-	height: 100%;
-	left: 0;
-	opacity: 1;
-	position: fixed;
-	top: 0;
+/* Your style here */
+body {
+	color: #676a6c;
+	overflow-x: hidden;
+	padding-top: 50px;
+}
+
+h1 {
+	margin-top: 10px;
+	font-size: 30px;
+	font-weight: 200;
+}
+
+a {
+	color: #337ab7;
+	text-decoration: none;
+}
+
+section p {
+	color: #aeaeae;
+	font-size: 13px;
+}
+
+#languaje {
+	display: none;
+}
+
+/* HELPERS */
+.navy {
+	color: #f89c0b;
+}
+
+.navy-line {
+	border-bottom: 2px solid #f89c0b;
+	height: 1px;
+	margin: 60px auto 0;
+	width: 60px;
+}
+
+img.fullwidth {
+	margin: 0;
+	padding: 0;
 	width: 100%;
-	z-index: -1;
 }
 
-a, a:hover, a:visited {
+.btn-primary {
+	background-color: #f89c0b;
+	background-image: none;
+	border-color: #f89c0b;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 10px 20px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+	background-color: #2393C6;
+	border-color: #2393C6;
+	color: #FFFFFF;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-img-center {
+	margin: 0 auto;
+}
+
+.mt-10 {
+	margin-top: 10px;
+}
+.mt-20 {
+	margin-top: 20px;
+}
+.mt-30 {
+	margin-top: 30px;
+}
+.mt-40 {
+	margin-top: 40px;
+}
+.mt-50 {
+	margin-top: 50px;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
+.mb-40 {
+	margin-bottom: 40px;
+}
+.mb-50 {
+	margin-bottom: 50px;
+}
+/* END HELPERS */
+
+/* NAV */
+
+/* END NAV */
+
+/* HOME */
+#home .carousel > .carousel-inner > .item > img {
+	width: 100%;
+}
+/* END HOME */
+
+/* FEATURES */
+
+/* END FEATURES */
+
+/* TEAM */
+#team {
+	background-color: #f4f4f4;
+}
+
+.social-icon a {
+	background: #f89c0b;
+	border-radius: 50px;
 	color: #fff;
+	display: block;
+	height: 28px;
+	padding: 4px 8px;
+	width: 28px;
+}
+/* END TEAM */
+
+/* CONTACT */
+#contact {
+	background-color: #f4f4f4;
+	background-image: url('http://web.altiviaot.com/img/word_map.png');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	margin-top: 60px;
+}
+/* END CONTACT */
+
+
+/* LANGUAJE */
+#languaje {
+	background-color: #f89c0b;
+	bottom: 0;
+	color: #fff;
+	padding: 5px 20px 0;
+	position: fixed;
+	right: 20px;
 }
 
-.content {
-	margin: 150px 0;
+#languaje a, #languaje a:hover {
+  color: #fff;
 }
-
-h1, h2, h3, h4, h5, h6, p {
-	color: #fff !important;
-	margin-bottom: 0;
-}
-
-.text-center{
-	text-align: center;
-}
-
-@media (max-width: 450px) {
-	.content {
-		margin: 40px 0;
-	}
-}
+/* END LANGUAJE */
