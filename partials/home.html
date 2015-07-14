@@ -1,5 +1,5 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-  	<div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top top-nav">
+  	<div class="container">
     	<div class="navbar-header">
       		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 				<span class="sr-only">Toggle navigation</span>
@@ -7,16 +7,19 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
       		</button>
-      		<a class="navbar-brand" href="#">Brand</a>
+      		<a class="navbar-brand" href="#">
+                <img class="logo" src="https://dl.dropboxusercontent.com/u/57960869/Altiviaot/logotipo.png" alt="">
+            </a>
     	</div>
 
     	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      		<ul class="nav navbar-nav">
-        		<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        		<li><a href="#">Link</a></li>
-      		</ul>
+      		<ul class="nav navbar-nav"></ul>
       		<ul class="nav navbar-nav navbar-right">
-        		<li><a href="#">Link</a></li>
+        		<li><a href="#">NOSOTROS</a></li>
+                <li><a href="#">NUESTRO EQUIPO</a></li>
+                <li><a href="#">SERVICIOS</a></li>
+                <li><a href="#">PROYECTOS</a></li>
+                <li><a href="#">CONTACTO</a></li>
       		</ul>
     	</div>
   	</div>
@@ -32,19 +35,19 @@
 
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
-		  		<img src="http://web.altiviaot.com/img/header_two.jpg" alt="">
+		  		<img src="./assets/img/home/bg_header.jpg" alt="">
 				<div class="carousel-caption">
 					texto
 				</div>
 			</div>
 			<div class="item">
-				<img src="http://web.altiviaot.com/img/header_two.jpg" alt="">
+				<img src="./assets/img/home/bg_header.jpg" alt="">
 				<div class="carousel-caption">
 					texto
 				</div>
 			</div>
 			<div class="item">
-				<img src="http://web.altiviaot.com/img/header_two.jpg" alt="">
+				<img src="./assets/img/home/bg_header.jpg" alt="">
 				<div class="carousel-caption">
 					texto
 				</div>
@@ -113,8 +116,17 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<h2><i class="icon"></i> DISEÑO A LA MEDIDA</h2>
-				<p>La planeación y medición de proyectos a la medida es lo que mejor hacemos. Si quieres realizar un proyecto digital que se destaque, vamos a ser un buen equipo.</p>
+                <h2><i class="icon"></i> DISEÑO A LA MEDIDA</h2>
+                <p>La planeación y medición de proyectos a la medida es lo que mejor hacemos. Si quieres realizar un proyecto digital que se destaque, vamos a ser un buen equipo.</p>
+            </div>
+            <div class="col-md-6">
+				<h2><i class="icon"></i> SERVICIOS ADICIONALES</h2>
+				<p>Con cada proyecto que se realice se ofrecen diversos plus a sus sistemas:</p>
+                <ul>
+                    <li>Gestion de incidencias en tiempo real.</li>
+                    <li>Plataforma de gestion de hostings.</li>
+                    <li>Entre Otras.</li>
+                </ul>
 			</div>
 		</div>
 	</div>
@@ -133,7 +145,7 @@
             <div class="col-sm-6">
                 <div class="text-center">
                     <img src="https://dl.dropboxusercontent.com/u/57960869/Altiviaot/profile/128x128_jom.png" class="img-responsive img-circle text-img-center" alt="">
-                    <h4><span class="navy">Yaledys</span> Machacon</h4>
+                    <h4><span class="navy custom-hover">Yaledys</span> Machacon</h4>
                     <p>Directora de Proyectos</p>
                     <ul class="list-inline social-icon">
                         <li><a href="#"><i class="fa fa-twitter"></i></a>
@@ -148,7 +160,7 @@
             <div class="col-sm-6">
                 <div class="text-center">
                     <img src="https://dl.dropboxusercontent.com/u/57960869/Altiviaot/profile/128x128_jom.png" class="img-responsive img-circle text-img-center" alt="">
-                    <h4><span class="navy">Jonathan</span> Olier</h4>
+                    <h4><span class="navy custom-hover">Jonathan</span> Olier</h4>
                     <p>Ing. de Sistemas y Arquitecto de Software</p>
                     <ul class="list-inline social-icon">
                         <li><a href="https://twitter.com/djom202"><i class="fa fa-twitter"></i></a>
@@ -178,39 +190,39 @@
                 <p>Todos los nuestros servicios ofrecidos son de calidad y estos son algunos de ellos.</p>
             </div>
         </div>
-        <div class="row mt-40">
-            <div class="col-lg-6 features-text">
+        <div class="row">
+            <div class="col-lg-6 mt-40">
                 <h2>Consultrias</h2>
-                <i class="fa fa-briefcase big-icon pull-left"></i>
+                <a href="#" class="se-icons"><i class="fa fa-briefcase big-icon pull-left"></i></a>
                 <p>Podemos ofrecerle asesorias para resolver sus dudas con problemas o inquietudes con respecto a tecnologias, implementaciones, sitio web, hostings y dominios entre otros, todo a su entera disposicion. Solo llamenos y coordialmente atenderemos todas sus dudas e inquietudes.</p>
             </div>
-            <div class="col-lg-6 features-text">
+            <div class="col-lg-6 mt-40">
                 <h2>Dominios y Servidores</h2>
-                <i class="fa fa-gears big-icon pull-left"></i>
-                <p>Le ofrecemos una diversidad de paquetes y/o a su medida de servidores para que respalden sus necesidades. Le ofrecemos diversidad de dominios como .com, .net, .org, .us, .com.co y .es, ademas de comodas formas de pago. Nosotros mismos nos encargamos de recordarle cuando vence su hosting y/o dominio y estamos al tanto que si asi lo desea pueda renovarlo a tiempo y sin ningun incoveniente.</p>
+                <a href="#" class="se-icons"><i class="fa fa-gears big-icon pull-left"></i></a>
+                <p>Le ofrecemos una diversidad de paquetes a su medida de servidores para que respalden sus necesidades. Le ofrecemos diversidad de dominios como .com, .net, .org, .us, .com.co y .es, ademas de comodas formas de pago. Nosotros mismos nos encargamos de recordarle cuando vence su hosting y/o dominio y estamos al tanto que si asi lo desea pueda renovarlo a tiempo y sin ningun incoveniente.</p>
             </div>
         </div>
-        <div class="row mt-40">
-            <div class="col-lg-6 features-text">
-                <h2>Welcome Pages, Landing Pages y Markup</h2>
-                <i class="fa fa-html5 big-icon pull-left"></i>
+        <div class="row">
+            <div class="col-lg-6 mt-40">
+                <h2>Landing Pages y Markup</h2>
+                <a href="#" class="se-icons"><i class="fa fa-html5 big-icon pull-left"></i></a>
                 <p>Maquetamos sitios web, usted nos trae su diseño y nosotros lo transformamos en una obra de arte hecha web. Tambien realizamos micro sitios donde pueda darse a conocer, tener presencia en internet o simplemente colocar sus datos de contacto para que sus clientes los puedan contactar.</p>
             </div>
-            <div class="col-lg-6 features-text">
+            <div class="col-lg-6 mt-40">
                 <h2>Sitios Web</h2>
-                <i class="fa fa-code big-icon pull-left"></i>
+                <a href="#" class="se-icons"><i class="fa fa-code big-icon pull-left"></i></a>
                 <p>Trabajamos diferentes tipos de plataformas y segun sus necesidades. Nuestra especialidad es el desarrollo de sitios web a su medida, nosotros nos encargaremos de realizar su sitio web en donde sus clientes encuentren todo lo necesario de ustedes o los productos que se deseen publicar.</p>
             </div>
         </div>
-        <div class="row mt-40">
-            <div class="col-lg-6 features-text">
+        <div class="row">
+            <div class="col-lg-6 mt-40">
                 <h2>Aplicaiones Web</h2>
-                <i class="fa fa-laptop big-icon pull-left"></i>
+                <a href="#" class="se-icons"><i class="fa fa-laptop big-icon pull-left"></i></a>
                 <p>Nuestro objetivo en cuanto a desarrollo de paginas Web es que nuestros clientes estén orgullosos de su página Web ( La mayoría lo están!), y queremos ofrecerle lo mejor. Si revisa nuestro portafolio se dará cuenta que en cada diseño se encuentra plasmado el espíritu de cada negocio.</p>
             </div>
-            <div class="col-lg-6 features-text">
+            <div class="col-lg-6 mt-40">
                 <h2>Aplicaciones Mobiles</h2>
-                <i class="fa fa-mobile big-icon pull-left"></i>
+                <a href="#" class="se-icons"><i class="fa fa-mobile big-icon pull-left"></i></a>
                 <p>Nuestros desarrollos moviles combinan aplicaciones funcionales como bases de datos y administradores de contenidos de uso intuitivo que no requieren de parte del usuario ningún conocimiento más allá de saber navegar por internet. Estamos en capacidad de ayudarle en todas sus necesidades moviles por más complejas que parezcan.</p>
             </div>
         </div>
@@ -319,7 +331,7 @@
             <div class="col-lg-3 col-lg-offset-3">
                 <address>
                     <strong>
-                	    <i class="fa fa-at"></i> <span class="navy">info@altiviaot.com</span>
+                	    <i class="fa fa-at"></i> <span class="navy custom-hover">info@altiviaot.com</span>
                 	</strong>
                 	<br>
                     <i class="fa fa-flag"></i> Barranquilla, Colombia

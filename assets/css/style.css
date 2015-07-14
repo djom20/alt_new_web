@@ -18,13 +18,9 @@ a {
 	text-decoration: none;
 }
 
-section p {
+section p, li {
 	color: #aeaeae;
 	font-size: 13px;
-}
-
-#languaje {
-	display: none;
 }
 
 /* HELPERS */
@@ -37,6 +33,31 @@ section p {
 	height: 1px;
 	margin: 60px auto 0;
 	width: 60px;
+}
+
+.big-icon {
+	font-size: 56px;
+	/*margin-bottom: 48px;*/
+  	color: #f89c0b;
+}
+
+.social-icon a {
+	background-color: #f89c0b;
+	border-radius: 50px;
+	color: #fff;
+	display: block;
+	height: 28px;
+	padding: 6px 8px;
+	width: 28px;
+}
+
+.social-icon a:hover {
+	background-color: #337ab7;
+}
+
+span.navy.custom-hover:hover {
+	color: #337ab7;
+	cursor: pointer;
 }
 
 img.fullwidth {
@@ -103,7 +124,35 @@ img.fullwidth {
 /* END HELPERS */
 
 /* NAV */
+.top-nav img.logo {
+	width: 10em;
+}
 
+.top-nav .navbar-brand {
+	height: 100%;
+	padding: 8px 15px;
+}
+
+.top-nav .navbar-fixed-top {
+	border-radius: 0;
+	background-image: none;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+.top-nav .navbar-default .nav li a {
+	font-family: 'Open Sans', helvetica, arial, sans-serif;
+	color: #fff;
+}
+
+.top-nav .navbar-default .nav li a:hover {
+	color: #f89c0b;
+}
+
+.bottom-nav {
+	
+}
 /* END NAV */
 
 /* HOME */
@@ -116,26 +165,23 @@ img.fullwidth {
 
 /* END FEATURES */
 
+/* SERVICES */
+.se-icons:hover i {
+	color: #337ab7;
+	cursor: pointer;
+}
+/* END SERVICES */
+
 /* TEAM */
 #team {
 	background-color: #f4f4f4;
-}
-
-.social-icon a {
-	background: #f89c0b;
-	border-radius: 50px;
-	color: #fff;
-	display: block;
-	height: 28px;
-	padding: 4px 8px;
-	width: 28px;
 }
 /* END TEAM */
 
 /* CONTACT */
 #contact {
 	background-color: #f4f4f4;
-	background-image: url('http://web.altiviaot.com/img/word_map.png');
+	background-image: url('../assets/contact/word_map.png');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	margin-top: 60px;
@@ -157,3 +203,13 @@ img.fullwidth {
   color: #fff;
 }
 /* END LANGUAJE */
+
+/* BOOTSTRAP */
+@media (min-width: 768px){
+	.top-nav .navbar-nav > li > a {
+	  	padding-top: 30px;
+	  	padding-bottom: 30px;
+	}
+}
+/* END BOOTSTRAP */
+
