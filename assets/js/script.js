@@ -1,23 +1,23 @@
 $(function(){
 	// Your code here
+
+	$('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
 	nav();
 });
 
 function nav(){
-	$(window).scroll(function(){
-		if($(window).scrollTop() > 70){
-			console.log("3");
-		}else{
-			$("nav").animate({
-				duration: 100,
-				easing: 'swing',
-				step: function(val) {
-					console.log("step");
-				},
-				complete: function() {
-					console.log("finish");
-    			}
-			});
-		}
+	$(window).scroll(function() {
+	    if ($(".navbar").offset().top > 50) {
+	        $(".navbar-fixed-top").removeClass("top-nav");
+	    } else {
+	        $(".navbar-fixed-top").addClass("top-nav");
+	    }
 	});
 }

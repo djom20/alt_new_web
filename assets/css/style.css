@@ -4,7 +4,6 @@
 body {
 	color: #676a6c;
 	overflow-x: hidden;
-	padding-top: 50px;
 }
 
 h1 {
@@ -124,29 +123,53 @@ img.fullwidth {
 /* END HELPERS */
 
 /* NAV */
-.top-nav img.logo {
-	width: 10em;
+.top-nav.navbar-fixed-top {
+	padding: 20px 0;
+	margin-bottom: 0;
 }
 
-.top-nav .navbar-brand {
+.navbar-fixed-top img.logo {
+	width: 7em;
+}
+
+.top-nav.navbar-fixed-top img.logo {
+	/*width: 10em;*/
+}
+
+.navbar > .container .navbar-brand,
+.navbar > .container-fluid .navbar-brand{
 	height: 100%;
-	padding: 8px 15px;
+	padding: 4px;
 }
 
-.top-nav .navbar-fixed-top {
+.navbar-fixed-top {
+	-webkit-transition: background .8s ease-in-out,padding .8s ease-in-out;
+    -moz-transition: background .8s ease-in-out,padding .8s ease-in-out;
+    transition: background .8s ease-in-out,padding .8s ease-in-out;
+}
+
+.top-nav.navbar-fixed-top {
 	border-radius: 0;
 	background-image: none;
 	background-color: transparent;
 	border: none;
 	box-shadow: none;
+
+	-webkit-transition: background .8s ease-in-out,padding .8s ease-in-out;
+    -moz-transition: background .8s ease-in-out,padding .8s ease-in-out;
+    transition: background .8s ease-in-out,padding .8s ease-in-out;
 }
 
-.top-nav .navbar-default .nav li a {
+.navbar-default .navbar-nav > li > a {
 	font-family: 'Open Sans', helvetica, arial, sans-serif;
+	color: #676a6c;
+}
+
+.top-nav.navbar-default .navbar-nav > li > a {
 	color: #fff;
 }
 
-.top-nav .navbar-default .nav li a:hover {
+.navbar-default .navbar-nav > li > a:hover {
 	color: #f89c0b;
 }
 
@@ -181,7 +204,7 @@ img.fullwidth {
 /* CONTACT */
 #contact {
 	background-color: #f4f4f4;
-	background-image: url('../assets/contact/word_map.png');
+	background-image: url('../img/contact/word_map.png');
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	margin-top: 60px;
@@ -203,13 +226,3 @@ img.fullwidth {
   color: #fff;
 }
 /* END LANGUAJE */
-
-/* BOOTSTRAP */
-@media (min-width: 768px){
-	.top-nav .navbar-nav > li > a {
-	  	padding-top: 30px;
-	  	padding-bottom: 30px;
-	}
-}
-/* END BOOTSTRAP */
-
